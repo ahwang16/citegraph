@@ -12,7 +12,8 @@ authors = {
 @app.route('/')
 def home():
 	number = random.randint(0, 10)
-	return render_template('index.html', number=number, phrase="Hello world! Here is a magic number: ")
+	return "Hello world! Here is a magic number: " + str(number)
+	# return render_template('index.html', number=number, phrase="Hello world! Here is a magic number: ")
 
 
 @app.route('/authors', methods=['GET'])
