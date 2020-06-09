@@ -12,3 +12,4 @@ artifacts:
   files:
     - requirements.txt
     - flask-test.py
+    - Dockerfile
